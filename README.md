@@ -1,2 +1,2 @@
-# Project_sql1
+# Project_sql
 FoodDB Insights: SQL Analysis Project.
