@@ -45,13 +45,13 @@ select * from product;
 select * from goldusers_signup;
 select * from users;
 
- /* 1. What is the total amount each customer spent on zomato ?	*/
+ /* 1. What is the total amount each customer spent on food app ?	*/
  
 select s.userid, sum(p.price) total_amount_spent from sales s JOIN product p ON s.product_id = p.product_id
 group by s.userid;
 
 
-/* 2. How many days each customer has visited Zomato */ 
+/* 2. How many days each customer has visited food app */ 
 
 
 select userid, count( distinct created_date) DISTINCT_DAYS from sales
